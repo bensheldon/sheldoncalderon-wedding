@@ -1,0 +1,10 @@
+language: ruby
+rvm:
+  - 2.0.0
+env:
+  global:
+    - secure: tq3ZNBApWjNOa4pqI2IFPwKpzSqkbYzglWGY/825/MPpBUQC/JTQ/triNPLwUOwK3i0ut6JAaF9R2S6gUb/EBcBZBuc9rl9N6XNDKRr9vSVGFVaK8htPNdVJJzwFrrLBRWf/bn2TuGjcgIgOZSGqhJALStfBdlrpqKQjDBqq3f4=
+    - secure: tErl2jbSUZXVtnWRh/JzcTYUES9HNEsask0onEF7nuMg6hcXaP65TZGb3qmj1KsuMghIJMBxbdJgvPTm8y3LT/didqsg5f4HxX+mennqdz4p+/UCew9FJWAWpIObdAKea6xhT81+tfa4NjOWiLetjIoRTQkUfiH9mBjT2+IfpCc=
+script: bundle exec middleman build
+after_success:
+  - if [[ "$TRAVIS_BRANCH" = "master" ]]; then bundle exec middleman s3_sync; fi

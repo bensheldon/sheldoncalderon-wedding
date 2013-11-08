@@ -5,3 +5,4 @@ gem 'haml'
 gem 'bootstrap-sass'
 
 gem "middleman-livereload", "~> 3.1.0"
+gem 'middleman-s3_sync'
