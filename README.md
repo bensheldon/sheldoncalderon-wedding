@@ -8,13 +8,13 @@ A middle-man based single page static website that automatically deploys to an s
 Installation & usage
 --------------------
 
-Install: 
+Install:
 
 ```
-bundle install`
+bundle install
 ```
 
-Run: 
+Run:
 
 ```
 bundle exec middleman
@@ -26,7 +26,7 @@ bundle exec middleman
 Deployment
 ----------
 
-Any commits pushed to the `master` branch are automatically built and deployed to an s3 bucket using travis-ci. 
+Any commits pushed to the `master` branch are automatically built and deployed to an s3 bucket using travis-ci.
 
 Duplicating joyful deployments
 -----------------------------
@@ -62,7 +62,7 @@ This was accomplished with a combination of:
           ]
         }
 
-3. Telling Travis-CI to watch this Github repository 
+3. Telling Travis-CI to watch this Github repository
 4. Using the [travis CLI gem](https://rubygems.org/gems/travis) to encrypt the AWS user credentials as environment variables (check out the [`.env.sample`](.env.sample) file):
 
         $ travis encrypt AWS_ACCESS_KEY_ID=The0Key1Master --add
