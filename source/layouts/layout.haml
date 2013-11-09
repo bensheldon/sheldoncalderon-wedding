@@ -16,20 +16,21 @@
 
   %body
 
-    .navbar.navbar-inverse.navbar-fixed-top
-      .navbar-inner
-        .container.body-container
-          %button.btn.btn-navbar{data: {target: '.nav-collapse', toggle: 'collapse'}, type: 'button'}
+    .navbar.navbar-fixed-top.navbar-inverse{role: "navigation"}
+      .container
+        .navbar-header
+          %button.navbar-toggle{"data-target" => ".navbar-collapse", "data-toggle" => "collapse", type: "button"}
+            %span.sr-only Toggle navigation
             %span.icon-bar
             %span.icon-bar
             %span.icon-bar
-          %a.brand{href: '#'} Sheldon-Calderon Wedding
-          .nav-collapse.collapse
-            %ul.nav.pull-right
-              %li
-                %a{href: '#about'} About
-              %li
-                %a{href: '#contact'} Contact
+          %a.navbar-brand{href: "#"} Sheldon Calderon
+        .collapse.navbar-collapse
+          %ul.nav.navbar-nav
+            %li
+              %a{href: "#contact"} Contact
+
+    = partial 'hero'
 
     .container.body-container
       = yield
