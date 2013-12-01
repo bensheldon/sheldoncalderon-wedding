@@ -122,9 +122,11 @@ title: Sheldon-Calderon Wedding
       %h2 L.L. Bean
       %p You couldn't pry these flannel sheets and fluffy towels from our cold, damp San Francisco hands. <strong>Link coming soon</strong>
     .bio.col-md-4
-      %p.headshot= image_tag 'amazon.png'
+      - amazon_link = 'http://www.amazon.com/registry/wedding/2MMU3Q863KHAZ'
+      = link_to amazon_link do
+        %p.headshot= image_tag 'amazon.png'
       %h2 Amazon.com
-      %p Everything else, maybe even the kitchen sink. <strong>Link coming soon</strong>
+      %p Everything else, maybe even the kitchen sink. <strong>#{link_to 'Registry Link', amazon_link}</strong>
 
 
           
