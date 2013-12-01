@@ -115,14 +115,19 @@ title: Sheldon-Calderon Wedding
       = link_to heath_ceramics_link do
         %p.headshot= image_tag 'heath.png'
       %h2 Heath Ceramics
-      %p We love these beautiful ceramics, made here in the Bay Area&mdash;and a big upgrade from our current random dishware. <strong><a href="#{heath_ceramics_link}">Registry Link</a></strong>
+      %p We love these beautiful ceramics, made here in the Bay Area&mdash;and a big upgrade from our current random dishware. <strong>#{link_to 'Registry Link', heath_ceramics_link}</strong>
     .bio.col-md-4
       - llbean_link = ''
       %p.headshot= image_tag 'llbean.png'
       %h2 L.L. Bean
       %p You couldn't pry these flannel sheets and fluffy towels from our cold, damp San Francisco hands. <strong>Link coming soon</strong>
     .bio.col-md-4
-      %p.headshot= image_tag 'amazon.png'
+      - amazon_link = 'http://www.amazon.com/registry/wedding/2MMU3Q863KHAZ'
+      = link_to amazon_link do
+        %p.headshot= image_tag 'amazon.png'
       %h2 Amazon.com
-      %p Everything else, maybe even the kitchen sink. <strong>Link coming soon</strong>
+      %p Everything else, maybe even the kitchen sink. <strong>#{link_to 'Registry Link', amazon_link}</strong>
+
+
+          
 
