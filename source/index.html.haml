@@ -54,14 +54,16 @@ title: Sheldon-Calderon Wedding
       %h2 Emily
       %p= lorem.paragraph
     .bio.col-md-3.col-xs-6
-      %p.headshot= image_tag lorem.image('100x100')
-      %h2 Alejandra
-      %p= lorem.paragraph
+      %p.headshot= image_tag 'bio-ale.png'
+      %h2 Alejandra 
+      %p
+        Alejandra resides in the Winter Wonderland of Minnesota. She and her husband, Dan, enjoy snowboarding, cross country skiing, and when the lakes aren't frozen, kayaking. She is a pediatric nurse and Nurse Practitioner in training by day (and night), and proud mother to Adriana Victoria. 
     %br.visible-xs
     .bio.col-sm-3.col-xs-6
-      %p.headshot= image_tag lorem.image('100x100')
+      %p.headshot= image_tag 'bio-alba.png'
       %h2 Alba
-      %p= lorem.paragraph
+      %p
+        Alba is Angelina's youngest sister. She lives in Milwaukee, designs generators for Kohler, and racks up miles on her bike along Lake Michigan. Alba has also documented many moments of their parents' new dog, Sunny.
     .bo.col-md-3.col-xs-6
       %p.headshot= image_tag lorem.image('100x100')
       %h2 Greg
@@ -117,10 +119,10 @@ title: Sheldon-Calderon Wedding
       %h2 Heath Ceramics
       %p We love these beautiful ceramics, made here in the Bay Area&mdash;and a big upgrade from our current random dishware. <strong>#{link_to 'Registry Link', heath_ceramics_link}</strong>
     .bio.col-md-4
-      - llbean_link = ''
+      - llbean_link = 'http://www.llbean.com/wl/H2WMUFOY7O'
       %p.headshot= image_tag 'llbean.png'
       %h2 L.L. Bean
-      %p You couldn't pry these flannel sheets and fluffy towels from our cold, damp San Francisco hands. <strong>Link coming soon</strong>
+      %p You couldn't pry these flannel sheets and fluffy towels from our cold San Francisco hands. Please email <strong>family@sheldoncalderon.com</strong> if you make a purchase so we can remove items and share our shipping information. <strong>#{link_to 'Wishlist Link', llbean_link}</strong>
     .bio.col-md-4
       - amazon_link = 'http://www.amazon.com/registry/wedding/2MMU3Q863KHAZ'
       = link_to amazon_link do
